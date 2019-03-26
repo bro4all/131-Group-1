@@ -1,0 +1,32 @@
+{
+  "presets": [
+    "@babel/preset-env",
+    "@babel/preset-react",
+    "@babel/preset-typescript"
+  ],
+  "plugins": [
+    ["@babel/plugin-proposal-class-properties"],
+    ["@babel/plugin-proposal-object-rest-spread", false, "object-rest-spread"],
+
+    [
+      "import",
+      {
+        "libraryName": "antd",
+        "libraryDirectory": "es",
+        "style": true
+      },
+      "import-antd"
+    ],
+    [
+      "module-resolver",
+      {
+        "root": ["./"],
+        "alias": {
+          "dist": "./dist",
+          "server": "./server",
+          "client": "./src"
+        }
+      }
+    ]
+  ]
+}

@@ -1,0 +1,239 @@
+// Colors
+$primary-color: #1890ff; // primary color for all components
+$link-color: #1890ff; // link color
+$success-color: #52c41a; // success state color
+$warning-color: #faad14; // warning state color
+$error-color: #f5222d; // error state color
+$font-size-base: 14px; // major text font size
+$heading-color: rgba(0, 0, 0, 0.85); // heading text color
+$text-color: rgba(0, 0, 0, 0.65); // major text color
+$text-color-secondary: rgba(0, 0, 0, 0.45); // secondary text color
+$disabled-color: rgba(0, 0, 0, 0.25); // disable state color
+$border-radius-base: 4px; // major border radius
+$border-color-base: #d9d9d9; // major border color
+$box-shadow-base: 0 2px 8px rgba(0, 0, 0, 0.15); // major shadow for layers
+// styles
+
+.antd-pro-login-login.antd-pro-login-prefixIcon {
+  color: rgba(255, 255, 255, 0.65) !important;
+}
+.react-stockcharts {
+  font-family: "Source Code Pro", monospace !important;
+}
+#app {
+  width: 100%;
+  min-height: 100vh;
+}
+.logo {
+  width: 120px;
+  height: 64px;
+  font-size: 20px;
+  float: left;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.col {
+  height: 40px;
+  display: flex !important;
+  margin: 20px 0;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  color: $primary-color;
+  font-weight: bold;
+  &:hover {
+    cursor: pointer;
+  }
+  &.selected {
+    border-bottom: 2px solid $primary-color;
+  }
+}
+.ant-menu-submenu-disabled > .ant-menu-submenu-title {
+  &:hover {
+    cursor: initial;
+  }
+}
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  font-family: "Inter UI";
+  font-weight: 300;
+  & .navHeader {
+    line-height: 46px;
+    font-size: 15px;
+    font-weight: 500;
+    padding: 0 20px;
+  }
+  & .navMenu {
+    display: flex;
+    justify-content: flex-end;
+  }
+}
+.color-menu-item {
+  display: flex !important;
+  justify-content: center;
+  line-height: 1.5 !important;
+  font-family: sans-serif;
+  height: auto !important;
+  padding: 0 !important;
+}
+.sketch-picker {
+  box-shadow: none !important;
+  border: 1px solid #222;
+  width: 250px !important;
+}
+.antd-pro-number-info-numberInfo .antd-pro-number-info-numberInfoValue > span {
+  color: #fff !important;
+}
+.antd-pro-number-info-numberInfo
+  .antd-pro-number-info-numberInfoValue
+  .antd-pro-number-info-subTotal {
+  color: #ddd !important;
+}
+.antd-pro-number-info-numberInfo .antd-pro-number-info-numberInfoSubTitle {
+  color: #bbb !important;
+}
+.antd-pro-number-info-numberInfo
+  .antd-pro-number-info-numberInfoValue
+  .antd-pro-number-info-subTotal
+  .anticon-caret-up {
+  color: #52c41a !important;
+}
+.antd-pro-number-info-numberInfo
+  .antd-pro-number-info-numberInfoValue
+  .antd-pro-number-info-subTotal
+  .anticon-caret-down {
+  color: #f5222d !important;
+}
+.ant {
+  &-card {
+    background: #111111 !important;
+  }
+  &-card-head {
+    border: none !important;
+  }
+  &-layout {
+    min-height: 100vh !important;
+    &-content {
+      padding: 0 !important;
+    }
+  }
+  &-layout-header {
+    padding: 0 !important;
+    background: transparent !important;
+    height: auto !important;
+  }
+  &-tag {
+    height: 35px !important;
+    text-align: center;
+    min-width: 80px;
+    line-height: 35px !important;
+    font-size: 14px;
+    font-family: monospace !important;
+    font-weight: bold;
+  }
+  &-input-number-handler-wrap {
+    width: 30px;
+  }
+  &-spin-nested-loading {
+    background-color: #222;
+    .ant-tabs-bar {
+      border-color: transparent;
+    }
+    .ant-list-item.antd-pro-notice-icon-item {
+      border-color: transparent !important;
+    }
+    .antd-pro-notice-icon-item:hover {
+      background-color: #191919;
+    }
+    .antd-pro-notice-icon-clear {
+      border-top-color: transparent;
+      color: #fff;
+    }
+    .antd-pro-notice-icon-list
+      .antd-pro-notice-icon-loadMore.antd-pro-notice-icon-loadedAll {
+      color: #aaa;
+    }
+  }
+  &-menu-submenu-disabled {
+    & .ant-menu-submenu-arrow {
+      display: none;
+    }
+    &:hover {
+      cursor: initial;
+    }
+  }
+  &-modal {
+    &-footer,
+    &-header {
+      border-color: transparent !important;
+    }
+  }
+  &-menu-inline {
+    border-color: transparent !important;
+  }
+  &-modal-close:focus,
+  &-modal-close:hover {
+    color: $primary-color !important;
+  }
+  &-menu {
+    line-height: 1.5;
+    &.nav {
+      display: flex;
+      justify-content: flex-end;
+      background-color: transparent !important;
+      box-shadow: none !important;
+      border-bottom: none !important;
+      & .ant-menu-item {
+        border-bottom: none !important;
+      }
+      & input {
+        background-color: rgba(0, 0, 0, 0.05) !important;
+        outline: none !important;
+        border: none !important;
+        box-shadow: none !important;
+        padding-right: 40px !important;
+        &:focus {
+          outline: none !important;
+          border: none !important;
+          box-shadow: none !important;
+        }
+      }
+    }
+  }
+  &-col-md {
+    &-6,
+    &-24 {
+      margin-top: 25px;
+    }
+  }
+  .graph-card &-card-body {
+    padding: 0 !important;
+  }
+  &-select-arrow {
+    height: 100% !important;
+    display: flex !important;
+    flex-direction: column !important;
+    justify-content: center !important;
+    margin-top: 0 !important;
+    top: 0 !important;
+  }
+}
+.anticon.anticon-down.ant-select-arrow-icon {
+  margin-right: -2px;
+}
+.graph-card-title {
+  .pair {
+    font-size: 15px;
+    &-name {
+      color: lighten(#000, 70%);
+    }
+  }
+  .exchange {
+    font-size: 12px;
+    color: lighten(#000, 50%);
+    font-weight: 300;
+  }
+}
