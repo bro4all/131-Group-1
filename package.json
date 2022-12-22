@@ -21,7 +21,7 @@
     "fs-extra": "7.0.0",
     "history": "^4.7.2",
     "identity-obj-proxy": "3.0.0",
-    "jsonwebtoken": "^8.4.0",
+    "jsonwebtoken": "^9.0.0",
     "less": "2.7",
     "lodash": "^4.17.11",
     "moment": "^2.24.0",
